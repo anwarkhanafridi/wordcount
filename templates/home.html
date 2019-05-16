@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> my wordcount web</title>
+</head>
+<body>
+
+ <h2>word count app</h2>
+<p>welcome to wordcount websites</p> <br>
+{{ name }}
+<h3>this try function of my own</h3>
+ <p> this html file assicated with ->>{{ try }} </p>
+
+ <form action="{% url 'count' %}">  <!-- when it click to count goes this page-->
+     <textarea name="fulltextarea" id="" cols="30" rows="10" placeholder="please type here"></textarea> <br>
+     <input type="submit" value="count"/>
+ </form>
+
+<p>this page <a href={% url 'about' %}>About me</a></p>
+</body>
+</html>

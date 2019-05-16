@@ -1,0 +1,17 @@
+<a href={%  url 'home'  %}>Go to Home page </a>
+<h1>Count page</h1>
+
+<h2>Your text</h2>{{ fulltext }} <br>
+
+<h2>words count</h2>
+<p><b> This is the word leng =   {{ len_word  }} </b></p>
+<br>
+
+<!--  how to a loop in html files-->
+{{ worddictionary }}
+<p> the loop test is here </p>
+
+{% for word,value in worddictionary %}  <!-- loop of python and 'item()' was put in views.py -->
+{{ word }} = {{ value }}
+<br>
+{% endfor %}
